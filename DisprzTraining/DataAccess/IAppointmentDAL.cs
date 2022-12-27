@@ -13,7 +13,7 @@ namespace DisprzTraining.DataAccess
         Task<List<Appointment>> GetAppointmentByEventDate(DateTime getEvent);
         Task<bool> CheckAlreadyExistingEvent(Appointment request);
         Task<Appointment> CreateAppointment(Appointment request);
-        Task DeleteAppointmentById(Guid id);
+        Task<bool> DeleteAppointmentById(Guid id);
         Task UpdateAnAppointment(Appointment request);
     }
 }

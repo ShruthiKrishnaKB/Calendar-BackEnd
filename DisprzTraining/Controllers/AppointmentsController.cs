@@ -13,14 +13,14 @@ namespace DisprzTraining.Controllers
         {
             _appointmentBL=appointmentBL;
         }
-        [HttpGet("allAppointments")]
+        [HttpGet("all-appointments")]
         public async Task<IActionResult> GetAll(){
         // should use async for Task
             return Ok(await _appointmentBL.GettingAllAppointments());
             // return null;
             // problem faced
         }
-        [HttpGet("eventName")]
+        [HttpGet("event")]
         public async Task<IActionResult> GetByEventName(string events){
             var response = await _appointmentBL.GettingAppointmentsByEventName(events);
             if(response==null){
@@ -30,7 +30,7 @@ namespace DisprzTraining.Controllers
             
 
         }
-        [HttpGet("eventDate")]
+        [HttpGet("date")]
         public async Task<IActionResult> GetByEventDate(DateTime events){
             var response = await _appointmentBL.GettingAppointmentsByEventDate(events);
             if(response==null){
@@ -39,7 +39,7 @@ namespace DisprzTraining.Controllers
             return Ok(response); 
 
         }
-        [HttpPost("eventName")]
+        [HttpPost("event")]
         public async Task<IActionResult> Create(Appointment request){
             var response = await _appointmentBL.CreatingAppointments(request);
             if(response==null){
@@ -48,17 +48,17 @@ namespace DisprzTraining.Controllers
             return Created("Created",request);
 
         }
-        [HttpDelete("delete")]
+        [HttpDelete("event/{id}")]
         public async Task<IActionResult> DeleteById(Guid id)
         {
-            var response = _appointmentBL.DeletingAppointmentById(id);
-            if(response==null){
+            var response = await _appointmentBL.DeletingAppointmentById(id);
+            if(response==false){
                 return NotFound("Id not found");
             }
             return NoContent();
 
         }
-        [HttpPut("put")]
+        [HttpPut("event")]
         public async Task<IActionResult> Update(Appointment request)
         {
             var response = await _appointmentBL.UpdatingAnAppointment(request);

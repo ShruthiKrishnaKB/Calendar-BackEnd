@@ -20,31 +20,20 @@ namespace DisprzTraining.DataAccess
         public async Task<List<Appointment>> GetAppointmentByEventName(string getEvent)
         {
             var FindEvent = TodayAppointment.Where(events => events.EventName.ToLower().Contains(getEvent.ToLower())).ToList();
-            if (FindEvent.Count() == 0)
-            {
-                return null;
-            }
-            return (List<Appointment>)await Task.FromResult(FindEvent);
+            return (FindEvent.Count() == 0) ? null:(List<Appointment>)await Task.FromResult(FindEvent);
         }
         public async Task<List<Appointment>> GetAppointmentByEventDate(DateTime getEvent)
         {
             var FindEvent = TodayAppointment.Where(events => events.EventDate.ToShortDateString().Contains(getEvent.ToShortDateString())).ToList();
-            if (FindEvent.Count() == 0)
-            {
-                return null;
-            }
-            return (List<Appointment>)await Task.FromResult(FindEvent);
+            return (FindEvent.Count() == 0) ? null : (List<Appointment>)await Task.FromResult(FindEvent);
         }
-        public async Task<bool> CheckAlreadyExistingEvent(Appointment request){
+        public async Task<bool> CheckAlreadyExistingEvent(Appointment request)
+        {
             var CompareEvent =TodayAppointment.SingleOrDefault(events=>
                             (request.StartTimeHrMin>=events.StartTimeHrMin&&request.StartTimeHrMin<events.EndTimeHrMin) || 
                             (request.EndTimeHrMin>events.StartTimeHrMin&&request.EndTimeHrMin<=events.EndTimeHrMin) ||
                             (request.StartTimeHrMin<=events.StartTimeHrMin&&request.EndTimeHrMin>=events.EndTimeHrMin));
-            if((CompareEvent==null)||(CompareEvent.Id==request.Id))
-            {
-                return await Task.FromResult(false);
-            }
-            return await Task.FromResult(true);
+            return ((CompareEvent==null)||(CompareEvent.Id==request.Id)) ? await Task.FromResult(false) : await Task.FromResult(true);
         }
         public async Task<Appointment> CreateAppointment(Appointment request)
         {
@@ -54,20 +43,21 @@ namespace DisprzTraining.DataAccess
             }
             return null;
         }
-        public Task DeleteAppointmentById(Guid id)
+        public async Task<bool> DeleteAppointmentById(Guid id)
         {
             var DeleteEvent = TodayAppointment.Find(events=> events.Id.Equals(id));
             if(DeleteEvent==null)
             {
-                return null;
+                return false;
             }
             TodayAppointment.Remove(DeleteEvent);
-            return Task.CompletedTask;
+            return await Task.FromResult(true);
         }
         public Task UpdateAnAppointment(Appointment request)
         {
             var UpdateEvent = TodayAppointment.Find(events=>events.Id==request.Id);
-            if((request.StartTimeHrMin<request.EndTimeHrMin)&&(UpdateEvent != null)){
+            if((request.StartTimeHrMin<request.EndTimeHrMin)&&(UpdateEvent != null))
+            {
                 UpdateEvent.EventName=request.EventName;
                 UpdateEvent.EventDate=request.EventDate;
                 UpdateEvent.StartTimeHrMin=request.StartTimeHrMin;
@@ -76,7 +66,8 @@ namespace DisprzTraining.DataAccess
                 // return await Task.FromResult(UpdateEvent);
                 return Task.CompletedTask;
             }
-            else{
+            else
+            {
                 return null;
             }
         }

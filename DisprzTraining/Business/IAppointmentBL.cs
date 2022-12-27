@@ -12,7 +12,7 @@ namespace DisprzTraining.Business
         Task<List<Appointment>> GettingAppointmentsByEventName(string events);
         Task<List<Appointment>> GettingAppointmentsByEventDate(DateTime events);
         Task<Appointment> CreatingAppointments(Appointment request);
-        Task DeletingAppointmentById(Guid id);
+        Task<bool> DeletingAppointmentById(Guid id);
         Task<Task> UpdatingAnAppointment(Appointment request);
     }
 }
