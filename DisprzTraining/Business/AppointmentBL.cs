@@ -31,18 +31,17 @@ namespace DisprzTraining.Business
         }
         public async Task<Appointment> CreatingAppointments(Appointment request)
         {
-            var CreateEvent = await _appointmentDAL.CheckAlreadyExistingEvent(request);
-            return (!CreateEvent) ? await _appointmentDAL.CreateAppointment(request):null;
+            var check = await _appointmentDAL.CheckAlreadyExistingEvent(request);
+            return (!check) ? await _appointmentDAL.CreateAppointment(request):null;
         }
         public Task<bool> DeletingAppointmentById(Guid id)
         {
             return  _appointmentDAL.DeleteAppointmentById(id);
         }
-
         public async Task<Task> UpdatingAnAppointment(Appointment request)
         {
             var check = await _appointmentDAL.CheckAlreadyExistingEvent(request);
-            return (!check) ? _appointmentDAL.UpdateAnAppointment(request): null;
+            return (!check) ?  _appointmentDAL.UpdateAnAppointment(request): null;
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using DisprzTraining.Utils;
 using System.Text.Json;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCors();
 builder.Services.AddControllers()
 .AddJsonOptions(options =>
 {
@@ -26,13 +27,14 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
+
     app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000"));
 app.MapControllers();
 
 app.Run();
