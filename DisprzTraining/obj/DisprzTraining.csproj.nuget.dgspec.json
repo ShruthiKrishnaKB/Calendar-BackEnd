@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj": {}
+    "c:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj": {
+    "c:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj",
+        "projectUniqueName": "c:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj",
         "projectName": "DisprzTraining",
-        "projectPath": "C:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj",
+        "projectPath": "c:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\DisprzTraining.csproj",
         "packagesPath": "C:\\Users\\shruthi.k_disprz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\obj\\",
+        "outputPath": "c:\\Users\\shruthi.k_disprz\\Desktop\\DisprzTraining\\DisprzTraining\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shruthi.k_disprz\\AppData\\Roaming\\NuGet\\NuGet.Config"

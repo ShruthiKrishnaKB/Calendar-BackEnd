@@ -21,17 +21,28 @@ namespace DisprzTraining.Business
         {
             return await _appointmentDAL.GetAllAppointments();
         }
-        public async Task<List<Appointment>> GettingAppointmentsByEventName(string events)
+        public async Task<List<Appointment>> GettingAppointmentsByEventDate(DateTime getEvent)
         {
-            return await _appointmentDAL.GetAppointmentByEventName(events);
+            var GetResult = await _appointmentDAL.GetAllAppointments();
+            var FindEvent = GetResult.Where(events => events.EventDate.Date == getEvent.Date).OrderBy(events=>events.StartTimeHrMin).ToList();
+            return await Task.FromResult(FindEvent);
         }
-        public async Task<List<Appointment>> GettingAppointmentsByEventDate(DateTime events)
+        public async Task<bool> CheckAlreadyExistingEvent(Appointment request)
         {
-            return await _appointmentDAL.GetAppointmentByEventDate(events);
+            var GetResult = await _appointmentDAL.GetAllAppointments();
+            var CompareEvent =GetResult.Where(events=>
+                            (request.StartTimeHrMin>=events.StartTimeHrMin&&request.StartTimeHrMin<events.EndTimeHrMin) || 
+                            (request.EndTimeHrMin>events.StartTimeHrMin&&request.EndTimeHrMin<=events.EndTimeHrMin) ||
+                            (request.StartTimeHrMin<=events.StartTimeHrMin&&request.EndTimeHrMin>=events.EndTimeHrMin));
+            if(CompareEvent.Any()){
+                var CompareId = CompareEvent.Where(item=>item.Id!=request.Id);
+                return CompareId.Any() && await Task.FromResult(true);
+            }
+            return await Task.FromResult(false);
         }
         public async Task<Appointment> CreatingAppointments(Appointment request)
         {
-            var check = await _appointmentDAL.CheckAlreadyExistingEvent(request);
+            var check = await CheckAlreadyExistingEvent(request);
             return (!check) ? await _appointmentDAL.CreateAppointment(request):null;
         }
         public Task<bool> DeletingAppointmentById(Guid id)
@@ -40,8 +51,14 @@ namespace DisprzTraining.Business
         }
         public async Task<Task> UpdatingAnAppointment(Appointment request)
         {
-            var check = await _appointmentDAL.CheckAlreadyExistingEvent(request);
-            return (!check) ?  _appointmentDAL.UpdateAnAppointment(request): null;
+            var Check = await CheckAlreadyExistingEvent(request);
+            return (!Check) ?  _appointmentDAL.UpdateAnAppointment(request): null;
         }
+        // public async Task<List<Appointment>> GettingAppointmentsByEventName(string getEvent)
+        // {
+        //     var GetResult = await _appointmentDAL.GetAllAppointments();
+        //     var FindEvent = GetResult.Where(events => events.EventName.ToLower().Contains(getEvent.ToLower())).ToList();
+        //     return FindEvent.Any() ?(List<Appointment>)await Task.FromResult(FindEvent) : null;
+        // }
     }
 }

@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="1" branch-rate="1" version="1.9" timestamp="1674735630" lines-covered="153" lines-valid="153" branches-covered="36" branches-valid="36">
+  <sources>
+    <source>C:\Users\shruthi.k_disprz\Desktop\DisprzTraining\DisprzTraining\</source>
+  </sources>
+  <packages>
+    <package name="DisprzTraining" line-rate="1" branch-rate="1" complexity="63">
+      <classes>
+        <class name="Program" filename="Program.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="&lt;Main&gt;$" signature="(System.String[])" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="5" hits="10" branch="False" />
+                <line number="6" hits="10" branch="False" />
+                <line number="7" hits="10" branch="False" />
+                <line number="8" hits="10" branch="False" />
+                <line number="9" hits="10" branch="False" />
+                <line number="10" hits="10" branch="False" />
+                <line number="11" hits="10" branch="False" />
+                <line number="12" hits="10" branch="False" />
+                <line number="13" hits="20" branch="False" />
+                <line number="17" hits="10" branch="False" />
+                <line number="19" hits="10" branch="False" />
+                <line number="20" hits="10" branch="False" />
+                <line number="22" hits="10" branch="False" />
+                <line number="24" hits="10" branch="False" />
+                <line number="27" hits="10" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="136" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="10" branch="False" />
+                <line number="29" hits="10" branch="False" />
+                <line number="31" hits="10" branch="False" />
+                <line number="32" hits="10" branch="False" />
+                <line number="34" hits="10" branch="False" />
+                <line number="36" hits="10" branch="False" />
+                <line number="37" hits="20" branch="False" />
+                <line number="38" hits="10" branch="False" />
+                <line number="40" hits="10" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="10" branch="False" />
+            <line number="6" hits="10" branch="False" />
+            <line number="7" hits="10" branch="False" />
+            <line number="8" hits="10" branch="False" />
+            <line number="9" hits="10" branch="False" />
+            <line number="10" hits="10" branch="False" />
+            <line number="11" hits="10" branch="False" />
+            <line number="12" hits="10" branch="False" />
+            <line number="13" hits="20" branch="False" />
+            <line number="17" hits="10" branch="False" />
+            <line number="19" hits="10" branch="False" />
+            <line number="20" hits="10" branch="False" />
+            <line number="22" hits="10" branch="False" />
+            <line number="24" hits="10" branch="False" />
+            <line number="27" hits="10" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="136" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="28" hits="10" branch="False" />
+            <line number="29" hits="10" branch="False" />
+            <line number="31" hits="10" branch="False" />
+            <line number="32" hits="10" branch="False" />
+            <line number="34" hits="10" branch="False" />
+            <line number="36" hits="10" branch="False" />
+            <line number="37" hits="20" branch="False" />
+            <line number="38" hits="10" branch="False" />
+            <line number="40" hits="10" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Utils.ConfigureDependenciesExtension" filename="Utils\ConfigureDependenciesExtension.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="ConfigureDependencyInjections" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="10" branch="False" />
+                <line number="13" hits="10" branch="False" />
+                <line number="15" hits="10" branch="False" />
+                <line number="16" hits="10" branch="False" />
+                <line number="17" hits="10" branch="False" />
+                <line number="18" hits="10" branch="False" />
+                <line number="19" hits="10" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="10" branch="False" />
+            <line number="13" hits="10" branch="False" />
+            <line number="15" hits="10" branch="False" />
+            <line number="16" hits="10" branch="False" />
+            <line number="17" hits="10" branch="False" />
+            <line number="18" hits="10" branch="False" />
+            <line number="19" hits="10" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Models.Appointment" filename="Models\Appointment.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="265" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EventName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="251" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EventDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="149" branch="False" />
+              </lines>
+            </method>
+            <method name="get_StartTimeHrMin" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="821" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EndTimeHrMin" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="603" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DescriptionOfEvent" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="241" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="265" branch="False" />
+            <line number="6" hits="251" branch="False" />
+            <line number="7" hits="149" branch="False" />
+            <line number="8" hits="821" branch="False" />
+            <line number="9" hits="603" branch="False" />
+            <line number="10" hits="241" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Models.HelloWorld" filename="Models\HelloWorld.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.DataAccess.AppointmentDAL" filename="DataAccess\AppointmentDAL.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="UpdateAnAppointment" signature="(DisprzTraining.Models.Appointment)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="76" hits="8" branch="False" />
+                <line number="77" hits="32" branch="False" />
+                <line number="78" hits="8" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="43" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="79" hits="7" branch="False" />
+                <line number="80" hits="7" branch="False" />
+                <line number="81" hits="7" branch="False" />
+                <line number="82" hits="7" branch="False" />
+                <line number="83" hits="7" branch="False" />
+                <line number="84" hits="7" branch="False" />
+                <line number="86" hits="7" branch="False" />
+                <line number="92" hits="1" branch="False" />
+                <line number="93" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="76" hits="8" branch="False" />
+            <line number="77" hits="32" branch="False" />
+            <line number="78" hits="8" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="43" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="79" hits="7" branch="False" />
+            <line number="80" hits="7" branch="False" />
+            <line number="81" hits="7" branch="False" />
+            <line number="82" hits="7" branch="False" />
+            <line number="83" hits="7" branch="False" />
+            <line number="84" hits="7" branch="False" />
+            <line number="86" hits="7" branch="False" />
+            <line number="92" hits="1" branch="False" />
+            <line number="93" hits="8" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.DataAccess.AppointmentDAL/&lt;&gt;c__DisplayClass3_0" filename="DataAccess\AppointmentDAL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;DeleteAppointmentById&gt;b__0" signature="(DisprzTraining.Models.Appointment)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="97" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="67" hits="97" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.DataAccess.AppointmentDAL/&lt;CreateAppointment&gt;d__2" filename="DataAccess\AppointmentDAL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="61" hits="21" branch="False" />
+                <line number="62" hits="21" branch="False" />
+                <line number="63" hits="21" branch="False" />
+                <line number="64" hits="21" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="61" hits="21" branch="False" />
+            <line number="62" hits="21" branch="False" />
+            <line number="63" hits="21" branch="False" />
+            <line number="64" hits="21" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.DataAccess.AppointmentDAL/&lt;DeleteAppointmentById&gt;d__3" filename="DataAccess\AppointmentDAL.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="66" hits="25" branch="False" />
+                <line number="68" hits="25" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="90" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="69" hits="4" branch="False" />
+                <line number="70" hits="4" branch="False" />
+                <line number="72" hits="21" branch="False" />
+                <line number="73" hits="21" branch="False" />
+                <line number="74" hits="25" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="66" hits="25" branch="False" />
+            <line number="68" hits="25" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="90" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="69" hits="4" branch="False" />
+            <line number="70" hits="4" branch="False" />
+            <line number="72" hits="21" branch="False" />
+            <line number="73" hits="21" branch="False" />
+            <line number="74" hits="25" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.DataAccess.AppointmentDAL/&lt;GetAllAppointments&gt;d__1" filename="DataAccess\AppointmentDAL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="48" branch="False" />
+                <line number="18" hits="48" branch="False" />
+                <line number="19" hits="48" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="48" branch="False" />
+            <line number="18" hits="48" branch="False" />
+            <line number="19" hits="48" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.DataAccess.HelloWorldDAL/&lt;GetHelloWorldMessage&gt;d__0" filename="DataAccess\HelloWorldDAL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+                <line number="9" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.appointmentsController" filename="Controllers\AppointmentsController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(DisprzTraining.Business.IAppointmentBL)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="55" branch="False" />
+                <line number="13" hits="55" branch="False" />
+                <line number="14" hits="55" branch="False" />
+                <line number="15" hits="55" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="55" branch="False" />
+            <line number="13" hits="55" branch="False" />
+            <line number="14" hits="55" branch="False" />
+            <line number="15" hits="55" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.appointmentsController/&lt;Create&gt;d__5" filename="Controllers\AppointmentsController.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="40" hits="25" branch="False" />
+                <line number="41" hits="49" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="44" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="42" hits="24" branch="False" />
+                <line number="43" hits="24" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="193" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="25" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="40" hits="25" branch="False" />
+            <line number="41" hits="49" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="44" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="42" hits="24" branch="False" />
+            <line number="43" hits="24" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="193" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="25" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.appointmentsController/&lt;DeleteById&gt;d__6" filename="Controllers\AppointmentsController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="57" hits="25" branch="False" />
+                <line number="58" hits="25" branch="False" />
+                <line number="59" hits="25" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="150" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="60" hits="25" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="57" hits="25" branch="False" />
+            <line number="58" hits="25" branch="False" />
+            <line number="59" hits="25" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="150" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="60" hits="25" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.appointmentsController/&lt;GetAll&gt;d__2" filename="Controllers\AppointmentsController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.appointmentsController/&lt;GetByEventDate&gt;d__4" filename="Controllers\AppointmentsController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="5" branch="False" />
+                <line number="37" hits="5" branch="False" />
+                <line number="38" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="34" hits="5" branch="False" />
+            <line number="37" hits="5" branch="False" />
+            <line number="38" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.appointmentsController/&lt;GetByEventName&gt;d__3" filename="Controllers\AppointmentsController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="24" hits="5" branch="False" />
+                <line number="25" hits="5" branch="False" />
+                <line number="26" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="157" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="27" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="5" branch="False" />
+            <line number="25" hits="5" branch="False" />
+            <line number="26" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="157" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="27" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.appointmentsController/&lt;Update&gt;d__7" filename="Controllers\AppointmentsController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="63" hits="11" branch="False" />
+                <line number="64" hits="11" branch="False" />
+                <line number="66" hits="11" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="157" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="67" hits="11" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="63" hits="11" branch="False" />
+            <line number="64" hits="11" branch="False" />
+            <line number="66" hits="11" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="157" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="67" hits="11" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.HelloWorldController" filename="Controllers\HelloWorldController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(DisprzTraining.Business.IHelloWorldBL)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Controllers.HelloWorldController/&lt;Helloworld&gt;d__2" filename="Controllers\HelloWorldController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="DeletingAppointmentById" signature="(System.Guid)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="70" hits="25" branch="False" />
+                <line number="71" hits="25" branch="False" />
+                <line number="72" hits="25" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(DisprzTraining.DataAccess.IAppointmentDAL)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="55" branch="False" />
+                <line number="17" hits="55" branch="False" />
+                <line number="18" hits="55" branch="False" />
+                <line number="19" hits="55" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="70" hits="25" branch="False" />
+            <line number="71" hits="25" branch="False" />
+            <line number="72" hits="25" branch="False" />
+            <line number="16" hits="55" branch="False" />
+            <line number="17" hits="55" branch="False" />
+            <line number="18" hits="55" branch="False" />
+            <line number="19" hits="55" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;&gt;c" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;GettingAppointmentsByEventDate&gt;b__4_1" signature="(DisprzTraining.Models.Appointment)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="21" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="21" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;&gt;c__DisplayClass3_0" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;GettingAppointmentsByEventName&gt;b__0" signature="(DisprzTraining.Models.Appointment)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="15" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="15" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;&gt;c__DisplayClass5_0" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="11">
+          <methods>
+            <method name="&lt;CheckAlreadyExistingEvent&gt;b__0" signature="(DisprzTraining.Models.Appointment)" line-rate="1" branch-rate="1" complexity="10">
+              <lines>
+                <line number="46" hits="154" branch="True" condition-coverage="100% (10/10)">
+                  <conditions>
+                    <condition number="22" type="jump" coverage="100%" />
+                    <condition number="46" type="jump" coverage="100%" />
+                    <condition number="70" type="jump" coverage="100%" />
+                    <condition number="94" type="jump" coverage="100%" />
+                    <condition number="118" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="47" hits="154" branch="False" />
+                <line number="48" hits="154" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;CheckAlreadyExistingEvent&gt;b__1" signature="(DisprzTraining.Models.Appointment)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="50" hits="19" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="46" hits="154" branch="True" condition-coverage="100% (10/10)">
+              <conditions>
+                <condition number="22" type="jump" coverage="100%" />
+                <condition number="46" type="jump" coverage="100%" />
+                <condition number="70" type="jump" coverage="100%" />
+                <condition number="94" type="jump" coverage="100%" />
+                <condition number="118" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="47" hits="154" branch="False" />
+            <line number="48" hits="154" branch="False" />
+            <line number="50" hits="19" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;CheckAlreadyExistingEvent&gt;d__5" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="43" hits="35" branch="False" />
+                <line number="44" hits="35" branch="False" />
+                <line number="45" hits="35" branch="False" />
+                <line number="49" hits="44" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="247" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="51" hits="9" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="322" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="53" hits="26" branch="False" />
+                <line number="54" hits="35" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="43" hits="35" branch="False" />
+            <line number="44" hits="35" branch="False" />
+            <line number="45" hits="35" branch="False" />
+            <line number="49" hits="44" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="247" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="51" hits="9" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="322" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="53" hits="26" branch="False" />
+            <line number="54" hits="35" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;CreatingAppointments&gt;d__6" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="56" hits="24" branch="False" />
+                <line number="57" hits="24" branch="False" />
+                <line number="58" hits="24" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="156" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="59" hits="24" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="56" hits="24" branch="False" />
+            <line number="57" hits="24" branch="False" />
+            <line number="58" hits="24" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="156" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="59" hits="24" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;GettingAllAppointments&gt;d__2" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;GettingAppointmentsByEventDate&gt;d__4" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="5" branch="False" />
+                <line number="32" hits="5" branch="False" />
+                <line number="34" hits="5" branch="False" />
+                <line number="35" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="31" hits="5" branch="False" />
+            <line number="32" hits="5" branch="False" />
+            <line number="34" hits="5" branch="False" />
+            <line number="35" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;GettingAppointmentsByEventName&gt;d__3" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="25" hits="5" branch="False" />
+                <line number="26" hits="5" branch="False" />
+                <line number="28" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="234" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="5" branch="False" />
+            <line number="26" hits="5" branch="False" />
+            <line number="28" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="234" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="29" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.AppointmentBL/&lt;UpdatingAnAppointment&gt;d__8" filename="Business\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="74" hits="11" branch="False" />
+                <line number="75" hits="11" branch="False" />
+                <line number="76" hits="11" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="145" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="77" hits="11" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="74" hits="11" branch="False" />
+            <line number="75" hits="11" branch="False" />
+            <line number="76" hits="11" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="145" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="77" hits="11" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.HelloWorldBL" filename="Business\HelloWorldBL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(DisprzTraining.DataAccess.IHelloWorldDAL)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="DisprzTraining.Business.HelloWorldBL/&lt;SayHelloWorld&gt;d__2" filename="Business\HelloWorldBL.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

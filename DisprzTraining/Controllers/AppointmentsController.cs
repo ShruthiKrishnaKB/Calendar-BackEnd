@@ -17,30 +17,16 @@ namespace DisprzTraining.Controllers
         public async Task<IActionResult> GetAll(){
         // should use async for Task
             return Ok(await _appointmentBL.GettingAllAppointments());
-            // return null;
-            // problem faced
         }
-        [HttpGet("event")]
-        public async Task<IActionResult> GetByEventName(string events){
-            var response = await _appointmentBL.GettingAppointmentsByEventName(events);
-            return (response==null)? NotFound("Event not found"): Ok(response);
-        }
-        // [HttpGet("date")]
-        // public async Task<IActionResult> GetByEventDate(DateTime date){
-        //     var response = await _appointmentBL.GettingAppointmentsByEventDate(date);
-        //     return (response==null) ? Ok() : Ok(response); 
-        // }
         [HttpGet("date")]
         public async Task<IActionResult> GetByEventDate(DateTime date){
-            // var response = await _appointmentBL.GettingAppointmentsByEventDate(date);
-            // return Ok(response); 
             return Ok(await _appointmentBL.GettingAppointmentsByEventDate(date));
         }
         [HttpPost]
         public async Task<IActionResult> Create(Appointment request){
             if(request.StartTimeHrMin<request.EndTimeHrMin){
                 var response = await _appointmentBL.CreatingAppointments(request);
-                return response==null ? Conflict("Meeting already exists in the given time") : Created("Created",request);
+                return response==null ? Conflict("Meeting already exists in the given time") : Created("Created",true);
             }
             return BadRequest("Invalid Time Interval");
         }
@@ -53,8 +39,7 @@ namespace DisprzTraining.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(Appointment request)
         {
-            var response = await _appointmentBL.UpdatingAnAppointment(request);
-            // return ((response==null) ? Conflict("Meeting already exists in the given time") : ((response==false)  ? NotFound("Id not found") : NoContent()));             
+            var response = await _appointmentBL.UpdatingAnAppointment(request);            
             return (response==null) ? Conflict("Meeting already exists in the given time") : NoContent();             
         }
         //design - GET /api/appointments
@@ -70,6 +55,10 @@ namespace DisprzTraining.Controllers
         //{
         //    return Ok();
         //}
-
+        // [HttpGet("event")]
+        // public async Task<IActionResult> GetByEventName(string events){
+        //     var response = await _appointmentBL.GettingAppointmentsByEventName(events);
+        //     return (response==null)? NotFound("Event not found"): Ok(response);
+        // }
     }
 }

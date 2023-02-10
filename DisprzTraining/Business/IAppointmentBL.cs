@@ -9,10 +9,11 @@ namespace DisprzTraining.Business
     public interface IAppointmentBL
     {
         Task<List<Appointment>> GettingAllAppointments();
-        Task<List<Appointment>> GettingAppointmentsByEventName(string events);
         Task<List<Appointment>> GettingAppointmentsByEventDate(DateTime events);
+        Task<bool> CheckAlreadyExistingEvent(Appointment request);
         Task<Appointment> CreatingAppointments(Appointment request);
         Task<bool> DeletingAppointmentById(Guid id);
         Task<Task> UpdatingAnAppointment(Appointment request);
+        // Task<List<Appointment>> GettingAppointmentsByEventName(string events);
     }
 }

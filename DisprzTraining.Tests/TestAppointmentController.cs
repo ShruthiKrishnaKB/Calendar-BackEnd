@@ -38,7 +38,7 @@ namespace DisprzTraining.Tests
             var getresult = await _appointmentController.GetAll();
             // Assert
             Assert.IsType<OkObjectResult>(getresult);
-            // Since i'm getting from controller the return type will be OKObjectResult;
+            // Since getting from controller the return type will be OKObjectResult;
         }
         [Fact]
         public async Task GetAll_GettingAppointments_ValueReturnType(){
@@ -46,28 +46,6 @@ namespace DisprzTraining.Tests
             Assert.Equal(200 , getresult.StatusCode);
             Assert.IsType<List<Appointment>>(getresult.Value);
         }
-        [Fact]
-        public async Task GetByEventName_WithNonExistingItem_NotFound(){
-            var getresult = await _appointmentController.GetByEventName("scrum");
-            Assert.IsType<NotFoundObjectResult>(getresult);
-        }
-        [Fact]
-        public async Task GetByEventName_WithExistingItems_OkObjectResult(){
-            var getresult = await _appointmentController.GetByEventName("daily");
-            Assert.IsType<OkObjectResult>(getresult);
-        }
-        [Fact]
-        public async Task GetByEventName_GettingAppointment_ValueReturnType(){
-            var getresult = (OkObjectResult)await _appointmentController.GetByEventName("daily");
-            Assert.Equal(200,getresult.StatusCode);
-            Assert.IsType<List<Appointment>>(getresult.Value);
-        }
-        
-        // [Fact]
-        // public async Task GetByEventDate_WithNonExistingItem_NotFound(){
-        //     var getresult = await _appointmentController.GetByEventDate(new DateTime(2022,12,12));
-        //     Assert.IsType<NotFoundObjectResult>(getresult);
-        // }
         [Fact]
         public async Task GetByEventDate_WithNonExistingItem_OkObjectResult(){
             var getresult = await _appointmentController.GetByEventDate(new DateTime(2022,12,12));
@@ -100,7 +78,8 @@ namespace DisprzTraining.Tests
         public async Task Create_CreatingAppointment_ValueReturnType(){
             var getresult =  (CreatedResult)await _appointmentController.Create(expectedEvent);
             Assert.Equal(201,getresult.StatusCode);
-            Assert.IsType<Appointment>(getresult.Value);
+            Assert.IsType<bool>(getresult.Value);
+            Assert.Equal(getresult.Value,true);
             await _appointmentController.DeleteById(new Guid("9245fe4a-d402-451c-b9ed-9c1a04247482"));
         }
         [Fact]
@@ -274,5 +253,21 @@ namespace DisprzTraining.Tests
             Assert.IsType<ConflictObjectResult>(getresult);
             await _appointmentController.DeleteById(new Guid("9245fe4a-d402-451c-b9ed-9c1a04247482"));
         }
+        // [Fact]
+        // public async Task GetByEventName_WithNonExistingItem_NotFound(){
+        //     var getresult = await _appointmentController.GetByEventName("scrum");
+        //     Assert.IsType<NotFoundObjectResult>(getresult);
+        // }
+        // [Fact]
+        // public async Task GetByEventName_WithExistingItems_OkObjectResult(){
+        //     var getresult = await _appointmentController.GetByEventName("daily");
+        //     Assert.IsType<OkObjectResult>(getresult);
+        // }
+        // [Fact]
+        // public async Task GetByEventName_GettingAppointment_ValueReturnType(){
+        //     var getresult = (OkObjectResult)await _appointmentController.GetByEventName("daily");
+        //     Assert.Equal(200,getresult.StatusCode);
+        //     Assert.IsType<List<Appointment>>(getresult.Value);
+        // }
     }
 }
