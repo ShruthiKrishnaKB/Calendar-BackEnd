@@ -14,6 +14,8 @@ namespace DisprzTraining.Utils
 
             services.AddScoped<IHelloWorldBL, HelloWorldBL>();
             services.AddScoped<IHelloWorldDAL, HelloWorldDAL>();
+            services.AddScoped<IAppointmentDAL,AppointmentDAL>();
+            services.AddScoped<IAppointmentBL,AppointmentBL>();
         }
     }
 }
